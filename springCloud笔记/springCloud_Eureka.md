@@ -25,20 +25,21 @@
 * 不关闭fetch-registry就代表开启了集群模式,instance的hostname代表自己的地址,defaultZone中存放其他Eureka服务的地址逗号隔开.
 ```yaml
 server:
-  port: 7002
+  port: 7001
 #Eureka配置
 eureka:
   instance:
     #Eureka服务端的实例名称
-    hostname: eureka-server2
+    hostname: eureka-server1
   client:
-    #表示是否向注册中心注册自己
+    # 检索服务选项，当设置为True(默认值)时，会进行服务检索,注册中心不负责检索服务
     register-with-eureka: false
-    #false代表自己是注册中心
-    # fetch-registry: false
+    # 服务注册中心也会将自己作为客户端来尝试注册自己,为true（默认）时自动生效
+    fetch-registry: false
     #注册地址,监控是http://${eureka.instance.hostname}:${server.port}
     service-url:
-      defaultZone: http://eureka-server2:7001/eureka/
+      # defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://eureka-server1:7001/eureka/,http://eureka-server2:7002/eureka/
 ```
 
 # 配置

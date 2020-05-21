@@ -6,12 +6,12 @@ eureka:
     #Eureka服务端的实例名称
     hostname: eureka-server2
   client:
-    #表示是否向注册中心注册自己
+    # 检索服务选项，当设置为True(默认值)时，会进行服务检索,注册中心不负责检索服务
     register-with-eureka: false
-    #false代表自己是注册中心
-    # fetch-registry: false
+    # 服务注册中心也会将自己作为客户端来尝试注册自己,为true（默认）时自动生效
+    fetch-registry: false
     #注册地址,监控是http://${eureka.instance.hostname}:${server.port}
     service-url:
     # defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-      defaultZone: http://eureka-server1:7001/eureka/
+      defaultZone: http://eureka-server1:7001/eureka/,http://eureka-server2:7002/eureka/
       
