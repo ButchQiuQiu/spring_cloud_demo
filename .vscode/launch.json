@@ -1,0 +1,74 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoApplication<spring_cloud_provider>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.butch.spring_cloud_provider.DemoApplication",
+            "projectName": "spring_cloud_provider",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoApplication<spring_cloud_consumer>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.butch.spring_cloud_consumer.DemoApplication",
+            "projectName": "spring_cloud_consumer",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoApplication<spring_cloud_eureka_7001>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.butch.spring_cloud_eureka_7001.DemoApplication",
+            "projectName": "spring_cloud_eureka_7001",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoApplication<spring_cloud_provider_8001>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.butch.spring_cloud_provider_8001.DemoApplication",
+            "projectName": "spring_cloud_provider_8001",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoApplication<spring_cloud_eureka_7002>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.butch.spring_cloud_eureka_7001.DemoApplication",
+            "projectName": "spring_cloud_eureka_7002",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoApplication<spring_cloud_provider_8002>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.butch.spring_cloud_provider_8002.DemoApplication",
+            "projectName": "spring_cloud_provider_8002",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoApplication<spring_cloud_zuul_9001>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.butch.spring_cloud_zuul_9001.DemoApplication",
+            "projectName": "spring_cloud_zuul_9001",
+            "args": ""
+        }
+    ]
+}
