@@ -1,10 +1,17 @@
 spring:
   cloud:
     config:
-    # git中对应的配置文件
-      name: application-provider8001
+    # git中对应的配置文件,eureka中只能和本服务名一直
+      # name: application-provider8001
     #   profile:  激活的配置
     # 分支
       label: master
     #   server的地址
-      uri: http://localhost:10001
+      discovery:
+        enabled: true       #默认false，设为true表示使用注册中心中的configserver配置，而不是自己配置configserver的uri
+        service-id: config-server-8008  #指定config server在服务发现中的serviceId，默认为：configserver
+eureka:
+  client:
+    service-url:
+      #服务注册地址,对应eureka的服务注册url
+      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/

@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: demo
+    name: application-8001
   datasource:
     username: root
     password: 199598

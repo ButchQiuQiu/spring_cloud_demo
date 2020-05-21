@@ -79,6 +79,16 @@
             "mainClass": "com.butch.spring_cloud_config_server_10001.DemoApplication",
             "projectName": "spring_cloud_config_server_10001",
             "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoApplication<spring_cloud_config_server_8008>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.butch.spring_cloud_config_server_8008.DemoApplication",
+            "projectName": "spring_cloud_config_server_8008",
+            "args": ""
         }
     ]
 }

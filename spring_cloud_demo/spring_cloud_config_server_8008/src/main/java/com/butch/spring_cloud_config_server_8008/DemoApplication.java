@@ -1,4 +1,4 @@
-package com.butch.spring_cloud_config_server_10001;
+package com.butch.spring_cloud_config_server_8008;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

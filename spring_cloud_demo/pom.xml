@@ -24,7 +24,7 @@
     <!-- zuul网关 -->
     <module>spring_cloud_zuul_9001</module>
     <!-- 配置中心 -->
-    <module>spring_cloud_config_server_10001</module>
+    <module>spring_cloud_config_server_8008</module>
   </modules>
 
   <!-- 自定义属性,用于版本控制 -->

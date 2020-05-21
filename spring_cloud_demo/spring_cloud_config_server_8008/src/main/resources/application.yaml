@@ -1,8 +1,8 @@
 server:
-  port: 10001
+  port: 8008
 spring:
   application:
-    name: config
+    name: config-server-8008
   cloud:
     config:
       server:

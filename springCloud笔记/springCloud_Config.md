@@ -48,7 +48,42 @@ eureka:
 </dependency>
 ```
 2. yaml配置,一般配置为bootstrap,优先级会比application高.
-```bootstrap```
+* ```bootstrap.yaml```
 ```yaml
-
+spring:
+  cloud:
+    config:
+    # git中对应的配置文件
+      name: application-provider8001
+    #   profile:  激活的配置
+    # 分支
+      label: master
+    #   server的地址
+      uri: http://localhost:10001
 ```
+
+# Eureka使用
+* 服务端无所谓,客户端需要把Eureka和config放在同一级别即全丢在bootstrap中,否则客户端会在连接eureka之前查找configServer.
+```yaml
+spring:
+  cloud:
+    config:
+    # git中对应的配置文件,eureka中只能和本服务名一直
+      # name: application-provider8001
+    #   profile:  激活的配置
+    # 分支
+      label: master
+    #   server的地址
+      discovery:
+        enabled: true       #默认false，设为true表示使用注册中心中的configserver配置，而不是自己配置configserver的uri
+        service-id: config-server-8008  #指定config server在服务发现中的serviceId，默认为：configserver
+eureka:
+  client:
+    service-url:
+      #服务注册地址,对应eureka的服务注册url
+      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/
+```
+
+# 高阶操作
+* 可以通过 springCloudBus配合消息中间件做到修改github就能直接热更新,否则一般情况修改了github得手动重启服务更新.
+
