@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+    # git中对应的配置文件
+      name: application-provider8001
+    #   profile:  激活的配置
+    # 分支
+      label: master
+    #   server的地址
+      uri: http://localhost:10001
