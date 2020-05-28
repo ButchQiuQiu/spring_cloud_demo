@@ -25,6 +25,13 @@
     <module>spring_cloud_zuul_9001</module>
     <!-- 配置中心 -->
     <module>spring_cloud_config_server_8008</module>
+    <!-- kafka -->
+    <!-- 消费者1 -->
+    <module>spring_cloud_stream_kafka_c1_7886</module>
+    <!-- 消费者2 -->
+    <module>spring_cloud_stream_kafka_c2_7887</module>
+    <!-- 生产者1 -->
+    <module>spring_cloud_stream_kafka_p1_7888</module>
   </modules>
 
   <!-- 自定义属性,用于版本控制 -->
