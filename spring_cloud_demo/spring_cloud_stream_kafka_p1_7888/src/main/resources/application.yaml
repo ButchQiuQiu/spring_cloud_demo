@@ -1,3 +1,5 @@
+server:
+  port: 7888
 spring:
   cloud:
     stream:
@@ -12,4 +14,10 @@ spring:
           destination: test1 #消息发往的目的地，对应topic
           group: output-group-1 #对应kafka的group
           content-type: text/plain #消息的格式
+        my-out:  # 自定义管道
+          binder: kafka
+          destination: myset # 消息发送低，对应topic主题
+          group: output-group-2 # 对应kafka的group
+          content-type: text/plain # 消息格式
+          
           

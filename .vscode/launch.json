@@ -89,6 +89,26 @@
             "mainClass": "com.butch.spring_cloud_config_server_8008.DemoApplication",
             "projectName": "spring_cloud_config_server_8008",
             "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoApplication<spring_cloud_stream_kafka_p1_7888>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.bucth.spring_cloud_stream_kafka_p1_7888.DemoApplication",
+            "projectName": "spring_cloud_stream_kafka_p1_7888",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoApplication<spring_cloud_stream_kafka_c1_7886>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.bucth.spring_cloud_stream_kafka_c1_7886.DemoApplication",
+            "projectName": "spring_cloud_stream_kafka_c1_7886",
+            "args": ""
         }
     ]
 }

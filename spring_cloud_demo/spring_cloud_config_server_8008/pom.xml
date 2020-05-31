@@ -18,6 +18,11 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
+		<!-- SpirngCloudBusKafka -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-bus-kafka</artifactId>
+		</dependency>
 		<!-- 导入Eureka依赖 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>

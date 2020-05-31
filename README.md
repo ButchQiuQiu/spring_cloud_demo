@@ -1,2 +1,2 @@
-* springCloudNetflix全家桶,附带每个模块的笔记.
+* springCloudNetflix全家桶整合Stream,Kafka,bus.
 * config放置SpringCloudConfig的配置中心.
