@@ -1,5 +1,19 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
 spring:
+  kafka:
+    # kafka服务器
+    bootstrap-servers: 127.0.0.1:2181
   cloud:
+    bus:
+      trace:
+        # 开启总线追踪
+        enabled: true
+      refresh:
+        enabled: true
     config:
     # git中对应的配置文件,eureka中只能和本服务名一直
       # name: application-provider8001
@@ -9,7 +23,8 @@ spring:
     #   server的地址
       discovery:
         enabled: true       #默认false，设为true表示使用注册中心中的configserver配置，而不是自己配置configserver的uri
-        service-id: config-server-8008  #指定config server在服务发现中的serviceId，默认为：configserver
+        service-id: CONFIG-SERVER-8008  #指定config server在服务发现中的serviceId，默认为：configserver
+      uri: localhost:8008
 eureka:
   client:
     service-url:

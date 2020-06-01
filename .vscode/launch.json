@@ -2,22 +2,12 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Spring Boot-DemoApplication<spring_cloud_provider>",
+            "name": "Spring Boot-DemoApplication<spring_cloud_config_server_8008>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
-            "mainClass": "com.butch.spring_cloud_provider.DemoApplication",
-            "projectName": "spring_cloud_provider",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "Spring Boot-DemoApplication<spring_cloud_consumer>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "mainClass": "com.butch.spring_cloud_consumer.DemoApplication",
-            "projectName": "spring_cloud_consumer",
+            "mainClass": "com.butch.spring_cloud_config_server_8008.DemoApplication",
+            "projectName": "spring_cloud_config_server_8008",
             "args": ""
         },
         {
@@ -38,76 +28,6 @@
             "console": "internalConsole",
             "mainClass": "com.butch.spring_cloud_provider_8001.DemoApplication",
             "projectName": "spring_cloud_provider_8001",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "Spring Boot-DemoApplication<spring_cloud_eureka_7002>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "mainClass": "com.butch.spring_cloud_eureka_7001.DemoApplication",
-            "projectName": "spring_cloud_eureka_7002",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "Spring Boot-DemoApplication<spring_cloud_provider_8002>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "mainClass": "com.butch.spring_cloud_provider_8002.DemoApplication",
-            "projectName": "spring_cloud_provider_8002",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "Spring Boot-DemoApplication<spring_cloud_zuul_9001>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "mainClass": "com.butch.spring_cloud_zuul_9001.DemoApplication",
-            "projectName": "spring_cloud_zuul_9001",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "Spring Boot-DemoApplication<spring_cloud_config_server_10001>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "mainClass": "com.butch.spring_cloud_config_server_10001.DemoApplication",
-            "projectName": "spring_cloud_config_server_10001",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "Spring Boot-DemoApplication<spring_cloud_config_server_8008>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "mainClass": "com.butch.spring_cloud_config_server_8008.DemoApplication",
-            "projectName": "spring_cloud_config_server_8008",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "Spring Boot-DemoApplication<spring_cloud_stream_kafka_p1_7888>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "mainClass": "com.bucth.spring_cloud_stream_kafka_p1_7888.DemoApplication",
-            "projectName": "spring_cloud_stream_kafka_p1_7888",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "Spring Boot-DemoApplication<spring_cloud_stream_kafka_c1_7886>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "mainClass": "com.bucth.spring_cloud_stream_kafka_c1_7886.DemoApplication",
-            "projectName": "spring_cloud_stream_kafka_c1_7886",
             "args": ""
         }
     ]

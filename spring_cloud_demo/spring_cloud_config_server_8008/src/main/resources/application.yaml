@@ -1,9 +1,21 @@
 server:
   port: 8008
 spring:
+  kafka:
+    # kafka服务器
+    bootstrap-servers: 127.0.0.1:2181
+    consumer:
+      group-id: config
   application:
     name: config-server-8008
   cloud:
+    bus:
+      # 开启消息总线功能
+      enabled: true
+      refresh:
+        enabled: true
+      trace:
+        enabled: true
     config:
       server:
         git:
@@ -15,8 +27,17 @@ spring:
           default-label: master 
           # 配置文件所在根目录
           search-paths: config
+         
 eureka:
   client:
     service-url:
       #服务注册地址,对应eureka的服务注册url
       defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/  
+
+management:
+  endpoints:
+    web:
+      exposure:
+        # 暴露外部接口
+        include: bus-refresh
+        
