@@ -8,12 +8,12 @@ spring:
     name: config-server-8008
   cloud:
     bus:
-      # 开启消息总线功能
+      # 开启消息总线功能 默认是true
       enabled: true
-      # 开启自动刷新功能
+      # 开启自动刷新功能 默认true
       refresh:
         enabled: true
-      # 刷新自动追踪功能
+      # 刷新自动追踪功能 默认false
       trace:
         enabled: true
     config:
