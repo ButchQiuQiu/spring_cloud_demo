@@ -2,18 +2,18 @@ server:
   port: 8008
 spring:
   kafka:
-    # kafka服务器
-    bootstrap-servers: 127.0.0.1:2181
-    consumer:
-      group-id: config
+    # kafka broker服务器 默认为localhost:9092
+    bootstrap-servers: localhost:9092
   application:
     name: config-server-8008
   cloud:
     bus:
       # 开启消息总线功能
       enabled: true
+      # 开启自动刷新功能
       refresh:
         enabled: true
+      # 刷新自动追踪功能
       trace:
         enabled: true
     config:

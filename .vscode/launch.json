@@ -29,6 +29,16 @@
             "mainClass": "com.butch.spring_cloud_provider_8001.DemoApplication",
             "projectName": "spring_cloud_provider_8001",
             "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoApplication<spring_cloud_eureka_7002>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.butch.spring_cloud_eureka_7001.DemoApplication",
+            "projectName": "spring_cloud_eureka_7002",
+            "args": ""
         }
     ]
 }
