@@ -1,16 +1,13 @@
-management:
-  endpoints:
-    web:
-      exposure:
-        include: refresh
+# management:
+#   endpoints:
+#     web:
+#       exposure:
+#         include: refresh
 spring:
   cloud:
     bus:
       trace:
         # 开启总线追踪
-        enabled: true
-      refresh:
-      # 自动刷新（目前不知道什么用）
         enabled: true
     # stream: 
     #   # kafka设置

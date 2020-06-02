@@ -34,22 +34,14 @@
 			<artifactId>spring-cloud-config-client</artifactId>
 		</dependency>
 		<!-- 导入actuator依赖暴露监控 -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
+		</dependency> -->
 		<!-- 导入CloudBus消息总线Kafka版本 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-bus-kafka</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-stream-kafka</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-bus</artifactId>
 		</dependency>
 	</dependencies>
 
